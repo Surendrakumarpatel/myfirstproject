@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+ }
+ html{
+     scroll-behavior: smooth;
+ }
+ .navbar{
+     position: fixed;
+     width: 100%;
+     padding: 30px 0;
+     z-index: 999;
+     /* background: crimson; */
+     font-family: 'Ubuntu',sans-serif;
+     transition: all 0.3s ease;
+ }
+ .navbar.sticky{
+     padding: 15px 0;
+     /* background: crimson; */
+     background: #b90504;
+    
+    
+ }
+ .navbar .max-width{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .max-width{
+     max-width: 1300px;
+     padding: 0 80px;
+     margin: auto;
+ }
+ .navbar .logo a{
+     font-size: 35px;
+     color: white;
+     font-weight: 600;
+ }
+ .navbar .logo a span{
+     /* color: crimson; */
+     color: #b90504;
+ }
+ .navbar.sticky .logo a span{
+     color: white;
+     transition: all 0.3s ease;
+ }
+ .navbar .menu li{
+    list-style-type: none;
+    display: inline-block;
+ }
+ .navbar .menu li a{
+     display: block;
+     color: white;
+     font-size: 18px;
+     font-weight: 500;
+     margin-left: 25px;
+     transition: color 0.3s ease;
+ }
+.navbar .menu li a:hover{
+   /* color: crimson; */
+   color: #b90504;
+ }
+.navbar.sticky .menu li a:hover {
+   color: white;
+ }
+
+ /* Menu btn Start */
+ .menu-btn{
+     color: white;
+     font-size: 23px;
+     cursor: pointer;
+     display: none;
+ }
+ .scroll-up-btn{
+     position: fixed;
+     height: 45px;
+     width: 42px;
+     /* background: crimson; */
+     background: #b90504;
+     right: 30px;
+     bottom: 10px;
+     text-align: center;
+     line-height: 45px;
+     color: #fff;
+     z-index: 9999;
+     font-size: 30px;
+     border-radius: 6px;
+     cursor: pointer;
+     opacity: 0;
+     pointer-events:none;
+     transition: all 0.3s ease;
+    }
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}    
+
+/****************** nav section end **********************/
+
+/****************** Home Section Start *********************/
+.home{
+    display: flex;
+    background-color: black; 
+    height: 100vh;
+    color: white;
+    font-family: 'Ubuntu',sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    margin-left: -3px;
+    font-weight: 600;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    /* color: crimson; */
+    color: #b90504;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    /* background: crimson; */
+    background: #b90504;
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #b90504;
+    transition: all 0.3s ease;
+    
+}
+.home .home-content a:hover{
+    background: none;
+    /* color: crimson; */
+    color: #b90504;
+}
+/****************** Home Section End *********************/
+
+/* all similar content styling code */
+section{
+    padding: 100px 0;
+}
+.about, .services, .skills, .teams, .contact,footer{
+    font-family: 'Poppins',sans-serif;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content
+ 
+ {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 23px;
+    font-family: 'Ubuntu',sans-serif;
+}
+section .title::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 20px;
+    /* color: crimson; */
+    color: #b90504;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/****************** About Section Start *********************/
+ 
+.about .title::after{
+    content: "who i am";
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+   font-size: 25px;
+   font-weight: 600;
+   margin-bottom: 10px;
+   
+}
+.about .about-content .right .text span{
+    /* color: crimson; */
+    color: #b90504;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    /* background: crimson; */
+    background: #b90504;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #b90504;
+    transition: all 0.3s ease;
+    
+}
+.about .about-content .right a:hover{
+    background: transparent;
+    /* color: crimson; */
+    color: #b90504;
+}
+/****************** About Section End *********************/
+
+
+/****************** Services Section Start *********************/
+.services, .teams{
+    background: #111;
+    color: #fff;
+}
+.services .title::before ,
+.teams .title::before{
+    background: #fff;
+}
+.services .title::after,
+.teams .title::after{
+    content:"what i provide" ;
+    background: #111;
+   
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition:all 0.3s ease;
+
+}
+.services .serv-content .card:hover{
+    /* background: crimson; */
+    background: #b90504;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+
+}
+.services .serv-content .card:hover .box{
+transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    /* color: crimson; */
+    color: #b90504;
+    transition:color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: #fff;
+    transition:all 0.3s ease;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+/****************** Services Section End *********************/
+
+/****************** Skills Section Start *********************/
+.skills .title::after{
+    content: "what i know";
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    /* background: crimson; */
+    background: #b90504;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #b90504;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    background: transparent;
+    /* color: crimson; */
+    color: #b90504;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+     display: flex;
+     margin-bottom: 5px;
+     align-items: center;
+     justify-content: space-between;
+}
+.skills .skills-content .right span{
+     font-size: 18px;
+     font-weight: 500;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /* background: crimson; */
+    background: #b90504;
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 70%;
+}
+.skills-content .right .js::before{
+    width: 80%;
+}
+.skills-content .right .php::before{
+    width: 50%;
+}
+.skills-content .right .react::before{
+    width: 70%;
+}
+
+/****************** Skills Section End *********************/
+
+/****************** Teams Section Start *********************/
+.teams .title::after{
+     content: "who with me";
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover{
+    /* background: crimson; */
+    background: #b90504;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+height: 150px;
+width: 150px;
+object-fit: cover;
+border-radius: 50%;
+border: 5px solid #b90504;
+transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid #b90504 !important;
+}
+.owl-dots .active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    /* background: crimson !important; */
+    background: #b90504 !important;
+
+}
+ 
+/****************** Teams Section End *********************/
+
+
+
+ /****************** Contact Section Start *********************/
+.contact .title::after{
+    content: "get in touch";
+}
+ 
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+  font-size: 25px;
+  /* color: crimson; */
+  color: #b90504;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+     height: 45px;
+     width: 100%;
+     margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height:80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius:6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #b90504;
+    /* background: crimson; */
+    background: #b90504;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    background: none;
+    /* color: crimson; */
+    color: #b90504;
+}
+ /****************** Contact Section End *********************/
+
+ /****************** Footer Section Start ********************/
+footer{
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    /* color: crimson; */
+    color: #b90504;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+ 
+ /****************** Footer Section End ********************/
